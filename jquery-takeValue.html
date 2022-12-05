@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take Value</title>
+    <script src="jquery-3.6.1.js"></script>
+    <script>
+      //   $(document).ready(function () {
+      //     var nilai = $("#btn");
+      //     var txt = $("#para");
+      //     nilai.click(function () {
+      //       alert(txt.val());
+      //     });
+      //   });
+
+      $(document).ready(function () {
+        var btn = $("#tombol");
+
+        btn.click(function () {
+          var nilai = $("#kota").val();
+          alert(nilai);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- <input type="text" name="txt" id="para" />
+    <button id="btn">click</button> -->
+    <select name="kota" id="kota">
+      <option value="Jakarta">Jakarta</option>
+      <option value="Bandung">Bandung</option>
+      <option value="Bogor">Bogor</option>
+    </select>
+    <button id="tombol">ambil nilai</button>
+  </body>
+</html>

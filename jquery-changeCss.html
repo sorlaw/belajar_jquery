@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS change</title>
+
+    <script src="jquery-3.6.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          var x = Math.round(Math.random() * 255);
+          var y = Math.round(Math.random() * 255);
+          var z = Math.round(Math.random() * 255);
+          $(".box").css("background-color", `rgb(${x},${y},${z}`);
+        });
+      });
+    </script>
+    <style>
+      .box {
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+        background-color: aqua;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Change Color</button>
+    <div class="box"></div>
+  </body>
+</html>

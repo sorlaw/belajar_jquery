@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery change value</title>
+    <script src="jquery-3.6.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tombol").click(function () {
+          var para = $("#paragraf2");
+          para.html(`<p>${para.text()}<i>eureka</i></p>`);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="paragraf1">Hello Everybody!</p>
+    <p id="paragraf2">Hello Jeka</p>
+    <button id="tombol">Click</button>
+  </body>
+</html>

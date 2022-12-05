@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Atribut</title>
+    <script src="jquery-3.6.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        // mengambil value dari sebuah attribute jika hanya diisi 1 argumen
+        // var x = $("#para").attr("title");
+        // console.log(x);
+        // mengubah isi dari sebuah attribute jika diisi 2 argumen
+        var x = $("#para").attr("title", "Halo semuanya");
+        console.log(x.attr("title"));
+      });
+    </script>
+  </head>
+  <body>
+    <h1 title="judul_Web" id="para">Halo semuanya</h1>
+  </body>
+</html>
